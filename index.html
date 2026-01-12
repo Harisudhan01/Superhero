@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Superhero Website | Harisudhan</title>
-<meta name="google-site-verification" content="0N5wmBX41NiuFuNuuCDJDkC8XFRaPZCCVe6LwyOmCSk" />
-<meta name="description" content="Superhero characters information website created by Harisudhan using HTML and CSS.">
-<meta name="keywords" content="superhero, marvel, dc, superhero website, harisudhan">
-<meta name="author" content="Harisudhan">
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="logo.png"> 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-    <h1>SUPERHERO</h1>
-    <p>Know your real time hero</p>
-</header>
+    <header>
+        <h1>SUPERHERO</h1>
+        <p>Know your real time hero</p>
+    </header>
 
-<div class="categories">
-    <button onclick="showHeroes('math')">Math</button>
-    <button onclick="showHeroes('science')">Science</button>
-    <button onclick="showHeroes('tech')">Tech</button>
-    <button onclick="showHeroes('game')">Game</button>
-    <button onclick="showHeroes('robotic')">Robots</button>
-    <button onclick="showHeroes('history')">History</button>
-</div>
+    <div class="categories">
+        <button onclick="showHeroes('math')">Math</button>
+        <button onclick="showHeroes('science')">Science</button>
+        <button onclick="showHeroes('tech')">Tech</button>
+        <button onclick="showHeroes('game')">Game</button>
+        <button onclick="showHeroes('robotic')">Robots</button>
+        <button onclick="showHeroes('history')">History</button>
+    </div>
 
-<div id="content"></div>
+    <div id="content"></div>
 
-<footer>
-    <h3>SUPERHERO</h3>
-    <p>Inspiring real-time legends from Math, Science, Tech, Sports & History</p>
-    <p>© 2026 | Designed by Harisudhan</p>
-</footer>
-<script src="script.js"></script>
+    <!-- Modal for Achievements -->
+    <div id="heroModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>SUPERHERO</h3>
+        <p>Inspiring real-time legends from Math, Science, Tech, Sports & History</p>
+        <p>© 2026 | Designed by Harisudhan</p>
+    </footer>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
-
-
